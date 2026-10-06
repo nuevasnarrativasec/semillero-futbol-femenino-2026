@@ -155,13 +155,14 @@ body{
         padding: 10px;
     }
     body header .header-semillero {
-        background: url('https://nuevasnarrativasec.github.io/semillero-futbol-femenino-2026/img/bg-cielo-movil-3.jpg?v4') no-repeat center top;
+        background: url('https://nuevasnarrativasec.github.io/semillero-futbol-femenino-2026/img/bg-cielo-movil-3.jpg?v5') no-repeat center top;
         background-attachment: scroll;
         background-size: 100%;
     }
     .box-cesped {
         background: transparent;
         padding-top: 70vh;
+        transform: translate(0, -35px);
     }
     .box-info ul li{
         margin-bottom: 20px;
