@@ -27,8 +27,8 @@ body{
 
 @font-face {
     font-family: 'Prelo Black';
-    src: url('../fonts/Prelo-Black.woff2') format('woff2'),
-        url('../fonts/Prelo-Black.woff') format('woff');
+    src: url('https://nuevasnarrativasec.github.io/semillero-futbol-femenino-2026/fonts/Prelo-Black.woff2') format('woff2'),
+        url('https://nuevasnarrativasec.github.io/semillero-futbol-femenino-2026/fonts/Prelo-Black.woff') format('woff');
 }
     .ctn-header-comercio{
         margin: 0 auto;
@@ -96,7 +96,7 @@ body{
                         width: 36px;
                     } 
     .header-semillero{
-        background: url('../img/bg-cielo-5.jpg') no-repeat center bottom;
+        background: url('https://nuevasnarrativasec.github.io/semillero-futbol-femenino-2026/img/bg-cielo-5.jpg') no-repeat center bottom;
         background-attachment: fixed;
         background-size: cover;
         /*height: 200vh;*/
@@ -155,7 +155,7 @@ body{
         padding: 10px;
     }
     body header .header-semillero {
-        background: url('../img/bg-cielo-movil-3.jpg?v4') no-repeat center top;
+        background: url('https://nuevasnarrativasec.github.io/semillero-futbol-femenino-2026/img/bg-cielo-movil-3.jpg?v4') no-repeat center top;
         background-attachment: scroll;
         background-size: 100%;
     }
@@ -177,7 +177,7 @@ body{
 @media screen and (max-height: 732px){
 
     .header-semillero {
-        background: url('../img/bg-cielo-732-4.jpg') no-repeat center top;
+        background: url('https://nuevasnarrativasec.github.io/semillero-futbol-femenino-2026/img/bg-cielo-732-4.jpg') no-repeat center top;
         background-attachment: fixed;
         background-size: cover;
     }
@@ -186,7 +186,7 @@ body{
 @media screen and (max-width: 820px){
 
     header .header-semillero{
-        background: url('../img/bg-cielo-768-3.jpg') no-repeat center bottom;
+        background: url('https://nuevasnarrativasec.github.io/semillero-futbol-femenino-2026/img/bg-cielo-768-3.jpg') no-repeat center bottom;
         background-attachment: fixed;
         background-size: cover;
         /*height: 200vh;*/
@@ -200,7 +200,7 @@ body{
 @media screen and (max-width: 1024px){
 
     .header-semillero{
-        background: url('./img/bg-cielo-1024-3.jpg') no-repeat center bottom;
+        background: url('https://nuevasnarrativasec.github.io/semillero-futbol-femenino-2026/img/bg-cielo-1024-3.jpg') no-repeat center bottom;
         background-attachment: fixed;
         background-size: cover;
         /*height: 200vh;*/
