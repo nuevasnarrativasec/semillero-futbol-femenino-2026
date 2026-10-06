@@ -162,7 +162,7 @@ body{
     .box-cesped {
         background: transparent;
         padding-top: 70vh;
-        transform: translate(0, -35px);
+        /*transform: translate(0, -35px);*/
     }
     .box-info ul li{
         margin-bottom: 20px;
