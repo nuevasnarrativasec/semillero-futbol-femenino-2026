@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semilero El Comercio de fútbol femenino by Repsol</title>
+
+    <link rel="stylesheet" href="./css/style.css?v4">
+
+</head>
+<body>
+
+    <header>   
+        <div class="header-semillero">    
+            <div class="header-comercio">
+                <div class="ctn-header-comercio">    
+                    <a href="https://elcomercio.pe/deporte-total/" target="_blank" class="logo-dt">
+                        <img src="https://nuevasnarrativasec.github.io/semillero-futbol-femenino-2025/img/logo-dt.png" alt="DT" width="100%">
+                    </a>            
+                    <div id="social">
+                        <button id="fb" class="sharer button" data-sharer="facebook" data-hashtag="" data-url="https://elcomercio.pe/semillero-futbol-femenino/">Facebook</button>
+
+                        <button id="wst" class="sharer button" data-sharer="whatsapp" data-title="DT | El Comercio" data-url="https://elcomercio.pe/semillero-futbol-femenino/">Whatsapp</button>
+
+                        <button id="tw" class="sharer button" data-sharer="twitter" data-title="DT | El Comercio" data-hashtags="" data-via='elcomercio_peru' data-url="https://elcomercio.pe/semillero-futbol-femenino/">Twitter</button>
+                    </div>
+                </div>            
+            </div> 
+            <div class="box-cesped">
+                <img src="./img/bg-cesped.webp" alt="" width="100%">
+            </div>
+        </div>
+    </header>
+
+    <div class="box-info">
+
+        
+
+        <ul>
+            <li>
+                <img src="../img/info-1-2.png" alt="" width="100%">
+            </li>
+            <li>
+                <img src="https://nuevasnarrativasec.github.io/semillero-futbol-femenino-2025/img/info-3.png" alt="" width="100%">
+            </li>
+        </ul>
+
+        <div class="box-texto-info">
+            <h2>Vuelve la fiesta del fútbol femenino</h2>
+            <p>
+                Viajaron 12 horas en bus para cumplir en sueño. Y hace un año fuimos testigos de la recompensa por su esfuerzo. Así fue la historia del AS Tingo, el equipo de Tingo María que decidió cruzar los Andes para jugar en la primera edición Semillero Repsol Fútbol Femenino y salir campeón. 
+            </p>
+            <p>
+                Este año, otras historias nos esperan. El Comercio, Repsol e Igma Sports se unen nuevamente para desarrollar la segunda edición del Semillero El Comercio de Fútbol Femenino Repsol, que se llevará a cabo desde el 14 de noviembre hasta el 28 de noviembre en el CARFIP de Chorrillos.
+            </p>
+            <p>
+                El certamen tiene como fin promover e impulsar la cultura deportiva en niñas y adolescentes de entre 10 y 13 años, a través del fútbol. Ellas podrán mostrar sus habilidades y medirse en un ambiente competitivo. 
+            </p>
+            <p>
+                Y todos los partidos, los goles, las mejores jugadas, podrás seguirlos aquí, en las plataformas de Deporte Total de El Comercio.
+            </p>
+            
+
+        </div>
+
+    </div>  
+
+    <!-- compartir -->
+    <script>
+        function shareUrl(event) {
+            const button = event.target;
+            const url = button.getAttribute('data-url');
+            
+            const sharer = button.getAttribute('data-sharer');
+            let shareUrl = '';
+
+            switch (sharer) {
+            case 'facebook':
+                const fbHashtag = button.getAttribute('data-hashtag') || '';
+                shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&hashtag=${encodeURIComponent(fbHashtag)}`;
+                break;
+                
+            case 'whatsapp':
+                const whatsappTitle = button.getAttribute('data-title');
+                shareUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(whatsappTitle + ' ' + url)}`;
+                break;
+                
+            case 'twitter':
+                const twitterTitle = button.getAttribute('data-title');
+                const twitterHashtags = button.getAttribute('data-hashtags');
+                const twitterVia = button.getAttribute('data-via');
+                shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(twitterTitle)}&url=${encodeURIComponent(url)}&hashtags=${twitterHashtags}&via=${twitterVia}`;
+                break;
+            }
+
+            window.open(shareUrl, '_blank');
+        }
+
+        document.querySelectorAll('.sharer').forEach(button => {
+            button.addEventListener('click', shareUrl);
+        });
+    </script>
+    
+</body>
+</html>
