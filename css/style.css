@@ -181,6 +181,9 @@ body{
     .box-texto-info{
         padding: 0 20px;
     }
+    .box-texto-info p{
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (max-height: 732px){
